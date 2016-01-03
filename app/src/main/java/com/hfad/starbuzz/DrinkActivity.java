@@ -70,6 +70,7 @@ public class DrinkActivity extends Activity {
         }
     }
 
+    @SuppressWarnings("unused")
     // Update the database when the checkbox is clicked
     public void onFavoriteClicked(View view) {
 //        int drinkNo = (Integer) getIntent().getExtras().get("drinkNo");
