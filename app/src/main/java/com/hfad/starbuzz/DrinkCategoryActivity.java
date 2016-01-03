@@ -4,7 +4,6 @@ import android.app.ListActivity;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteException;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -82,7 +81,6 @@ public class DrinkCategoryActivity extends ListActivity {
         @Override
         protected Boolean doInBackground(Void... params) {
             try {
-//                int i = 10 / 0;
                 SQLiteOpenHelper starbuzzDatabaseHelper = new StarbuzzDatabaseHelper(
                         DrinkCategoryActivity.this);
                 db = starbuzzDatabaseHelper.getReadableDatabase();
